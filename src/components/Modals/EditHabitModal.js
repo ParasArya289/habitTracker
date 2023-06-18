@@ -12,7 +12,7 @@ function EditModal({ handleClose }) {
 
   useEffect(() => {
     setControlledValue(selectedHabit);
-  }, [selectedHabit]);
+  }, [selectedHabit,showEdittModal]);
 
   const formValue = (e) => {
     const { name, value } = e.target;
