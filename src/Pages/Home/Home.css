@@ -19,5 +19,5 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit,500px);
+  grid-template-columns: repeat(auto-fit,minmax(300px,500px));
 }
