@@ -15,3 +15,9 @@
 .add-btn:hover{
     background-color: #44403c;
 }
+.habit-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit,500px);
+}
