@@ -25,7 +25,7 @@ export const Home = () => {
         ))}
       </div>
       <HabitModal handleClose={handleClose} />
-      {/* <EditModal handleClose={handleClose}/> */}
+      <EditModal handleClose={handleEditClose}/>
       <AddHabitModal handleClose={handleAddClose} />
       <button className="add-btn" onClick={handleAddShow}>
         +

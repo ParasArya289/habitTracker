@@ -192,7 +192,10 @@ export const dataReducer = (state, action) => {
     case "ADD_HABBIT":
       return {
         ...state,
-        habits: [...state.habits, action.payload],
+        habits: [
+          ...state.habits,
+          { id: state.habits.length + 1, ...action.payload },
+        ],
       };
     case "MOVE_TO_ARCHIVE":
       return {

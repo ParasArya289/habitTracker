@@ -1,3 +1,10 @@
-.habitModal{
-    background-color:black;
+.habitModal {
+  color: white;
+}
+.habit-data {
+  margin: 10px 0;
+}
+.habit-modal-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }

@@ -3,7 +3,7 @@ export const deleteHabit = (e, dispatch, id) => {
   dispatch({ type: "DELETE_HABBIT", payload: id });
 };
 
-export const updateHabit = (e, dispatch, id, data) => {
+export const updateHabit = (dispatch, id, data) => {
   dispatch({ type: "UPDATE_HABBIT", payload: { id, data } });
 };
 
