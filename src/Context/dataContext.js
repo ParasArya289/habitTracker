@@ -5,6 +5,8 @@ export const dataContext = createContext();
 
 export const DataContextProvider = ({ children }) => {
   const [showHabitModal, setShowHabitModal] = useState(false);
+  const [showEdittModal, setShowEdittModal] = useState(false);
+  const [showAddModal, setShowAddModal] = useState(false);
   const [selectedHabit, setSelectedHabit] = useState({});
   const [dataState, dispatchData] = useReducer(dataReducer, initState);
 
@@ -17,6 +19,10 @@ export const DataContextProvider = ({ children }) => {
         setShowHabitModal,
         selectedHabit,
         setSelectedHabit,
+        showEdittModal,
+        setShowEdittModal,
+        showAddModal,
+        setShowAddModal,
       }}
     >
       {children}
