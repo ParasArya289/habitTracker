@@ -19,13 +19,20 @@ export const Home = () => {
 
   return (
     <div className="home">
+      {habits.length <= 0 && (
+        <p>
+          No Habits as of now
+          <br />
+          Create habits
+        </p>
+      )}
       <div className="habit-container">
         {habits.map((habit) => (
           <HabitCard key={habit.title} habit={habit} />
         ))}
       </div>
       <HabitModal handleClose={handleClose} />
-      <EditModal handleClose={handleEditClose}/>
+      <EditModal handleClose={handleEditClose} />
       <AddHabitModal handleClose={handleAddClose} />
       <button className="add-btn" onClick={handleAddShow}>
         +

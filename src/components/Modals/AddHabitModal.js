@@ -14,12 +14,10 @@ function AddHabitModal({ handleClose }) {
     month: "2-digit",
     year: "numeric",
   });
-  const formattedDate = formatter.format(date);
-  console.log(formattedDate);
+  const formattedDate = formatter.format(date).replaceAll("/", "-");
   const createFormData = () => {
     const formData = new FormData(formRef.current);
     const values = Object.fromEntries(formData.entries());
-    console.log(values);
     return values;
   };
 
@@ -36,7 +34,6 @@ function AddHabitModal({ handleClose }) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
-      className="habitModal"
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">

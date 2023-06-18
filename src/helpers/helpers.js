@@ -11,4 +11,6 @@ export const addHabit = (dispatch, data) => {
   dispatch({ type: "ADD_HABBIT", payload: data });
 };
 
-// export const moveToArchive = ()
+export const moveToArchive = (dispatch, id, data) => {
+  dispatch({ type: "MOVE_TO_ARCHIVE", payload: { id, data } });
+};
