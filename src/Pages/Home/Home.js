@@ -1,8 +1,8 @@
 import "./Home.css";
 export const Home = () => {
     return (
-      <>
-        <h1>This is Home</h1>
-      </>
+      <div className="home">
+      <button className="add-btn">+</button>
+      </div>
     );
   };
